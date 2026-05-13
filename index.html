@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <i class="fas fa-code logo-icon"></i>
+            <span class="logo-text">Umut Topal</span>
+        </a>
+
+        <nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+         </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="content">
+            <h1>Umut Topal</h1>
+            <h2>Junior <span class="typing-text">Frontend Developer</span></h2>
+            <p>
+                I am a Software Engineering student passionate about embedded systems,
+                Python, and full-stack web development. At the intersection of hardware and software,
+                I create innovative projects that make a real-world impact.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-code"></i> View Projects
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                     <i class="fas fa-paper-plane"></i> Contact Me
+                 </a>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://github.com/UmutTopall"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/umut-topal-0818a0409"><i class="fab fa-linkedin-in"></i></a>   
+        </div>
+    </div>
+
+    <div class="profile-container">
+      <div class="border-outer"></div>
+      <div class="border-middle"></div>
+      <div class="border-inner"></div>
+      <div class="border-container"></div>
+      <div class="pulse-ring"></div>
+      <div class="pulse-ring"></div>
+      <div class="pulse-ring"></div>
+      <img src="profile.png" width="240px" alt="Profile Picture" class="profile-img" />
+    </div>
+  </section>
+  <main>
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-flex">
+                <div class="about-text">
+                    <p>
+                        Hello! I'm <strong>Umut Topal</strong>, a 3rd-year Software Engineering student at <strong>Halic University</strong>. 
+                        I am passionate about creating efficient, user-centric web applications and exploring the depths of low-level programming.
+                    </p>
+                    <p>
+                        My journey in software development focuses on bridging the gap between hardware and high-level interfaces. 
+                        Whether I'm working with 8086 Assembly or modern JavaScript frameworks, I strive for performance and clean architecture.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">My Technical Skills</h2>
+            <div class="table-container">
+                <table class="skills-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Technologies</th>
+                            <th>Proficiency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Frontend</td>
+                            <td>HTML5, CSS3, JavaScript (ES6+)</td>
+                            <td>Advanced</td>
+                        </tr>
+                        <tr>
+                            <td>Backend</td>
+                            <td>PHP, MySQL</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>Low-Level</td>
+                            <td>8086 Assembly, C++ (ESP32)</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>Tools</td>
+                            <td>Git, LaTeX, OMNeT++</td>
+                            <td>Advanced</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+<section id="projects" class="section-padding">
+    <div class="container">
+        <h2 class="section-title">Key Projects</h2>
+        <div id="project-list" class="projects-grid">
+            </div>
+    </div>
+</section>
+
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <span class="error-msg" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <span class="error-msg" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+                        <span class="error-msg" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <div id="formStatus"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Umut Topal. Built with passion and code.</p>
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<form id="contactForm" class="contact-form" action="contact.php" method="POST">
+    </form>
